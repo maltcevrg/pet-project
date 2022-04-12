@@ -1,0 +1,175 @@
+$minWidth: 320px;
+$maxWidth: 1152;
+$maxWidthConteiner: 856;
+$md1: $maxWidthConteiner + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+.container {
+  max-width: $maxWidthConteiner + px;
+  margin: 0 auto;
+  @media (max-width: $md1) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,600,700,900);
+
+.wrapper {
+  margin-top: 70px;
+  background-color: #edf7fa;
+  .recent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    span {
+      font-family: "Heebo";
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 60px;
+      color: #21243d;
+      margin-right: 500px;
+    }
+    .viewAll {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #00a8cc;
+      transition: all 0.5s;
+      &:hover {
+        text-shadow: 6px 6px 6px rgba(150, 150, 150, 0.7);
+      }
+    }
+  }
+  .postWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .post {
+      background-color: white;
+      margin: 20px;
+      width: 418px;
+      border-radius: 4px;
+      .title {
+        font-family: "Heebo";
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 38px;
+        color: #21243d;
+        margin: 30px;
+        transition: all 0.3s;
+        &:hover {
+          color: #ff6464;
+        }
+      }
+      .date {
+        font-family: "Heebo";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #21243d;
+        margin: 30px;
+      }
+      .text {
+        font-family: "Heebo";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #21243d;
+        margin: 30px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
