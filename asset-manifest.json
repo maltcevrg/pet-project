@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/pet-project/static/css/main.0312a351.css",
+    "main.js": "/pet-project/static/js/main.3a4d2123.js",
+    "static/js/787.c0d82e8b.chunk.js": "/pet-project/static/js/787.c0d82e8b.chunk.js",
+    "static/media/third.png": "/pet-project/static/media/third.035bf2158a16056c1df3.png",
+    "static/media/first.png": "/pet-project/static/media/first.186d33a8ba882db1d48a.png",
+    "static/media/vibrant.png": "/pet-project/static/media/vibrant.808282e974e914d0c7e4.png",
+    "static/media/second.png": "/pet-project/static/media/second.0300dc5191b29db98b13.png",
+    "static/media/design.png": "/pet-project/static/media/design.d429e54355f34df09e1b.png",
+    "static/media/malayam.png": "/pet-project/static/media/malayam.63630e9d343f379511d5.png",
+    "static/media/insta.svg": "/pet-project/static/media/insta.3d68c46cfdb30a63df12cfd1e23c9a94.svg",
+    "static/media/Group.svg": "/pet-project/static/media/Group.a32db65d6e8196f04e3966848ec15ed4.svg",
+    "static/media/Linkedin.svg": "/pet-project/static/media/Linkedin.05ad1948f9e4becd70e323c2cf6089bc.svg",
+    "index.html": "/pet-project/index.html",
+    "static/media/fb.svg": "/pet-project/static/media/fb.09acd56da0adb2d6e6e32841041e5a3a.svg",
+    "main.0312a351.css.map": "/pet-project/static/css/main.0312a351.css.map",
+    "main.3a4d2123.js.map": "/pet-project/static/js/main.3a4d2123.js.map",
+    "787.c0d82e8b.chunk.js.map": "/pet-project/static/js/787.c0d82e8b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0312a351.css",
+    "static/js/main.3a4d2123.js"
+  ]
+}
