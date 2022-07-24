@@ -36,7 +36,7 @@ let Featured = (props) => {
 
   return (
     <div className="container">
-      <h1 className="title">Work</h1>
+      <h1 className={style.title}>Work</h1>
       <div className={style.featuredWrapper}>{cardElement}</div>
     </div>
   )

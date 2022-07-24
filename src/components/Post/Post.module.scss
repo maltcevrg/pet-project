@@ -105,15 +105,22 @@ select {
 }
 
 .wrapper {
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
   .postTitle {
     font-family: Heebo;
     font-size: 34px;
     font-weight: 700;
     line-height: 50px;
-    letter-spacing: 0px;
     text-align: left;
-    padding: 40px 0px 0px 0px;
+    padding: 40px 0px 15px 0px;
     max-width: 500px;
+    margin: 0;
   }
   .description {
     .year {
@@ -165,6 +172,10 @@ select {
     margin: 0 auto;
     &:last-child {
       margin-top: 30px;
+    }
+    @media (max-width: 700px) {
+      width: 100%;
+      height: 100%;
     }
   }
 }

@@ -3,23 +3,23 @@ import Header from "./components/Header/Header"
 import Home from "./components/Home/Home"
 import Footer from "./components/Footer/Footer"
 import Blog from "./components/Blog/Blog"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import Work from "./components/Work/Work"
 import Post from "./components/Post/Post"
 
 const App = (props) => {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Routes>
-          <Route path="/Blog" element={<Blog postData={props.postData} />} />
+          <Route path='/Blog' element={<Blog postData={props.postData} />} />
           <Route
-            path="/Featured"
+            path='/Featured'
             element={<Work workData={props.workData} />}
           />
           <Route
-            path="/"
+            path='/'
             element={
               <Home
                 cardData={props.cardData}
@@ -28,7 +28,7 @@ const App = (props) => {
             }
           />
           <Route
-            path="/Home"
+            path='/Home'
             element={
               <Home
                 cardData={props.cardData}
@@ -36,10 +36,10 @@ const App = (props) => {
               />
             }
           />
-          <Route path="/Post" element={<Post />} />
+          <Route path='/Post' element={<Post />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }

@@ -111,46 +111,54 @@ select {
   background-color: #edf7fa;
   .recent {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    margin: 20px;
+    margin-bottom: 0;
     span {
       font-family: "Heebo";
       font-weight: 400;
       font-size: 22px;
       line-height: 60px;
       color: #21243d;
-      margin-right: 500px;
     }
     .viewAll {
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
       color: #00a8cc;
-      transition: all 0.5s;
-      &:hover {
-        text-shadow: 6px 6px 6px rgba(150, 150, 150, 0.7);
-      }
     }
   }
   .postWrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    @media (max-width: 700px) {
+      width: 100%;
+    }
     .post {
       background-color: white;
       margin: 20px;
-      width: 418px;
-      border-radius: 4px;
+      width: fit-content;
+      border-radius: 14px;
+      @media (max-width: 700px) {
+        width: fit-content;
+        height: fit-content;
+      }
       .title {
         font-family: "Heebo";
         font-weight: 700;
         font-size: 26px;
         line-height: 38px;
         color: #21243d;
-        margin: 30px;
+        margin: 15px;
         transition: all 0.3s;
         &:hover {
           color: #ff6464;
+        }
+        @media (max-width: 700px) {
+          font-size: 26px;
+          line-height: 28px;
         }
       }
       .date {
@@ -159,7 +167,11 @@ select {
         font-size: 18px;
         line-height: 26px;
         color: #21243d;
-        margin: 30px;
+        margin: 15px;
+        @media (max-width: 700px) {
+          font-size: 16px;
+          line-height: 18px;
+        }
       }
       .text {
         font-family: "Heebo";
@@ -167,8 +179,12 @@ select {
         font-size: 16px;
         line-height: 24px;
         color: #21243d;
-        margin: 30px;
+        margin: 15px;
         margin-bottom: 10px;
+        @media (max-width: 700px) {
+          font-size: 16px;
+          line-height: 18px;
+        }
       }
     }
   }

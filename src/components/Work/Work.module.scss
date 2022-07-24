@@ -6,12 +6,18 @@ h1 {
   font-weight: 900;
   line-height: 60px;
   letter-spacing: 0px;
-  margin-top: 30px;
+  margin: 20px;
 }
 
 .featuredWrapper {
-  margin-top: 20px;
+  margin: 20px;
   font-family: "Heebo";
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .card {
     display: flex;
     flex-direction: row;
@@ -22,6 +28,10 @@ h1 {
     &:first-child {
       border-bottom-style: solid;
       padding-bottom: 15px;
+    }
+    @media (max-width: 700px) {
+      flex-direction: column;
+      margin: 0 auto;
     }
     .cardContent {
       padding-left: 18px;

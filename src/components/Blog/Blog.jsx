@@ -5,7 +5,7 @@ const Blog = (props) => {
   const PostCard = (props) => {
     return (
       <div className={style.post}>
-        <a href="">
+        <a href=''>
           <p className={style.title}>{props.title}</p>
         </a>
         <p className={style.date}>
@@ -28,8 +28,10 @@ const Blog = (props) => {
 
   return (
     <div className={style.container}>
-      <h1>Blog</h1>
-      {post}
+      <div className={style.wrapper}>
+        <h1>Blog</h1>
+        {post}
+      </div>
     </div>
   )
 }

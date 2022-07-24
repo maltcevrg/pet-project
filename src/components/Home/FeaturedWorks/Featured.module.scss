@@ -1,25 +1,4 @@
-$minWidth: 320px;
-$maxWidth: 1152;
-$maxWidthConteiner: 856;
-$md1: $maxWidthConteiner + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
 
-.container {
-  max-width: $maxWidthConteiner + px;
-  margin: 0 auto;
-  @media (max-width: $md1) {
-    max-width: 970px;
-  }
-  @media (max-width: $md2) {
-    max-width: 750px;
-  }
-  @media (max-width: $md3) {
-    max-width: none;
-    padding: 0 10px;
-  }
-}
 
 /* Указываем box sizing */
 *,
@@ -104,10 +83,13 @@ select {
   }
 }
 @import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,600,700,900);
-
+.title{
+  margin: 20px;
+}
 .featuredWrapper {
   margin-top: 20px;
   font-family: "Heebo";
+  margin: 20px;
   .title {
     font-size: 22px;
     font-style: normal;
@@ -126,6 +108,9 @@ select {
     &:first-child {
       border-bottom-style: solid;
       padding-bottom: 15px;
+    }
+    @media (max-width: 700px) {
+      flex-direction: column;
     }
     .cardContent {
       padding-left: 18px;
